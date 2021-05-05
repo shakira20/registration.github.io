@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    body{
+    background-image:url('http://backgroundcheckall.com/wp-content/uploads/2017/12/registration-form-background-images-1.jpg');
+    background-repeat: no-repeat;
+    }
+     form{
+     border:1px solid black;
+     text-align:left;
+     width:25%;
+     height:50%;
+     display:inline-block;
+     }
+     .container{
+     padding:50px;
+     }
+
+     .register{
+           background-color:green;
+           padding:16px 20 px;
+           margin:8px 0;
+           width:25%;
+           height:15%;
+           }
+    </style>
+</head>
+<body>
+<center><form name="myForm" method="post" action="login.html" style="background-color:#5D6D7E ;">
+    <div class="container">
+        <center><h1>Registration Form</h1></center>
+        <br>
+        <label>Username</label>
+    <input type="text" name="username" placeholder="enter your name" ><br><br>
+        <label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="email" name="email" placeholder="abcd@gmail.com" ><br><br>
+        <label>Phone NO</label>
+        <input type="text" name="country code" value="+91" size="2" >
+    <input type="text" name="phone no" placeholder="1234567890" size="10" ><br><br>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" id="Female">Female<br>
+        <input type="radio" name="gender" id="Male">Male<br>
+        <input type="radio" name="trans" id="gender">Transgender<br><br>
+        <label>Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="password" name="pass" id="password" ><br><br>
+        <label>Confirm Password</label>
+        <input type="password" name="passwd" id="passwd" ><br><br>
+        <input type="checkbox" name="condition" id="condition" required> I accept the terms and conditions<br>
+    </div>
+        <center><button name="Submit" type="submit" class="register" onsubmit="return validateForm()" >Submit</button></center>
+</form></center>
+
+</body>
+</html>
